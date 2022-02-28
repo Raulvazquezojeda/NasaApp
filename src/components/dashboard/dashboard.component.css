@@ -1,0 +1,53 @@
+.container{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    height: 50%;
+    width: 31%;
+    margin: 12px;
+    border-radius: 20px;
+    background: linear-gradient(
+        to bottom right,
+        #9847FF,
+        #C447FF
+
+    );
+    cursor: pointer;
+}
+
+.photo{
+    width: 85%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    
+}
+.video{
+    width: 85%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    
+}
+
+.title{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dateContainer{
+    width: 100%;
+
+    
+}
+.date{float: right;
+    margin-right: 5%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
