@@ -1,5 +1,5 @@
 <div class="container">
-    <div (click)="goToDetails(dat.url,dat.explanation,dat.title)" *ngFor="let dat of data" class="card">
+    <div (click)="goToDetails(dat.url,dat.explanation,dat.title,dat.media_type)" *ngFor="let dat of data" class="card">
         <h2 class="title">{{dat.title}}</h2>
         <img *ngIf="dat.media_type == 'image'" class="photo" src="{{dat.url}}" alt="">
         <iframe class="video" *ngIf="dat.media_type == 'video'" [src]="dat.url | safe"></iframe>

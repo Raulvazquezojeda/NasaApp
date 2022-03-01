@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardComponent, SafePipe } from './dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { DetailsComponent } from './details/details.component';
+import { SafePipe } from 'src/app/pipes/safe.pipe';
 
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    SafePipe,
-    DetailsComponent
+    DetailsComponent,
+    SafePipe
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class NasaModule { }

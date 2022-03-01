@@ -14,15 +14,10 @@ export class NasaService extends ServiceBasic {
 
 
 
-   public getData = (date:string) => {
-
-
-   this.params['api_key']='zdUP8ElJv1cehFM0rsZVSQN7uBVxlDnu4diHlLSb';
-   this.params['date']= date;
-
-   return this.getCall('/planetary/apod', this.params);
-
-
+  public getData = (date: string) => {
+    this.params['api_key'] = 'zdUP8ElJv1cehFM0rsZVSQN7uBVxlDnu4diHlLSb';
+    this.params['date'] = date;
+    return this.getCall('/planetary/apod', this.params);
   }
 
 

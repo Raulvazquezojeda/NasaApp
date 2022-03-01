@@ -19,6 +19,14 @@
     margin: auto;
     
 }
+.video{
+    width: 45%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    
+}
 .text{
 
     display: flex;

@@ -7,9 +7,10 @@ import { ROUTING } from './app.routes';
 import { NasaModule } from '../components/nasa.module';
 
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

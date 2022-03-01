@@ -8,22 +8,26 @@ import { Router } from '@angular/router';
 })
 export class DetailsComponent implements OnInit {
 
-  image:string;
-  explanation:string;
-  title:string;
-  constructor(private router:Router) { }
+  image: string;
+  explanation: string;
+  title: string;
+  mediaType: string;
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
     this.getInfo();
   }
 
-  getInfo(){
-    this.image=localStorage.getItem("image");
+  // get info of localStorage
+  getInfo() {
+    this.image = localStorage.getItem("image");
     this.explanation = localStorage.getItem("explanation");
     this.title = localStorage.getItem("title");
+    this.mediaType = localStorage.getItem("mediaType");
   }
 
-  goDashboard(){
+  // navigate to dashboard
+  goDashboard() {
     this.router.navigate(['/dashboard']);
   }
 }

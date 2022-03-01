@@ -2,7 +2,8 @@
     <h2 class="title">{{title}}</h2>
     <button class="glow-on-hover" type="button" (click)="goDashboard()">DASHBOARD</button>
     <div class="image">
-    <img class="photo" [src]="image" alt="">
+    <img *ngIf="mediaType == 'image'" class="photo" [src]="image" alt="{{title}}">
+    <iframe class="video" *ngIf="mediaType == 'video'" [src]="image | safe"></iframe>
     </div>
     <div class="text">
     <p class="explanation">{{explanation}}</p>
